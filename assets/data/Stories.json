@@ -1,42 +1,37 @@
 {
   "stories": [
     {
-      "image":"Technology",
+      "image":"assets/icons/plants.svg",
       "title":"Plant Categories"
 
     },
     {
-      "image":"Technology",
+      "image":"assets/icons/forest.svg",
       "title":"Forests"
 
     },
     {
-      "image":"Technology",
+      "image":"assets/icons/life.svg",
       "title":"Wildlife"
 
     },
     {
-      "image":"Technology",
-      "title":"Water  Resources"
+      "image":"assets/icons/water.svg",
+      "title":"Water Resources"
 
     },
     {
-      "image":"Technology",
+      "image":"assets/icons/article.svg",
       "title":"Articles"
 
     },
     {
-      "image":"Technology",
+      "image":"assets/icons/work.svg",
       "title":"Work with us"
 
     },
     {
-      "image":"Technology",
-      "title":"WWF"
-
-    },
-    {
-      "image":"Technology",
+      "image":"assets/icons/donation.svg",
       "title":"Donations"
 
     }

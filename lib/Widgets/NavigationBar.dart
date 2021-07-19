@@ -11,7 +11,7 @@ class NavigationBar extends StatelessWidget {
         width: 120,
         child: Container(
             decoration: BoxDecoration(
-                color: Cst.darkBG,
+                color: Cst.darkBG.withOpacity(0.98),
                 border: Border(
                     right: BorderSide(
                         color: Colors.grey.withOpacity(0.03), width: 2))),

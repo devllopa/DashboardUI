@@ -28,7 +28,7 @@ class _MyHomePageState extends State<HomePage> with TickerProviderStateMixin {
                   child: Row(
                 children: [
                   Container(
-                      width: MediaQuery.of(context).size.width * 0.38,
+                      width: MediaQuery.of(context).size.width * 0.4,
                       child: StoriesGrid()),
                   // Expanded(child: StoriesGrid()),
                 ],
