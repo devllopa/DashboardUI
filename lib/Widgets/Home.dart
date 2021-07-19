@@ -1,6 +1,8 @@
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:dmd/Utils/constants.dart';
+import 'package:dmd/Widgets/Cards/FirstCard.dart';
 import 'package:dmd/Widgets/NavigationButtons.dart';
+import 'package:dmd/Widgets/RightList.dart';
 import 'package:dmd/Widgets/StoriesGrid.dart';
 import 'package:dmd/Widgets/TopStories.dart';
 import 'package:flutter/cupertino.dart';
@@ -30,7 +32,14 @@ class _MyHomePageState extends State<HomePage> with TickerProviderStateMixin {
                   Container(
                       width: MediaQuery.of(context).size.width * 0.4,
                       child: StoriesGrid()),
-                  // Expanded(child: StoriesGrid()),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        FirstCard(),
+                        Expanded(child: RightList()),
+                      ],
+                    ),
+                  ),
                 ],
               ))
             ])));

@@ -30,4 +30,5 @@ flutter:
     - assets/logo.svg
     - assets/icons/
     - assets/data/Stories.json
+    - assets/data/Rights.json
 

@@ -1,0 +1,30 @@
+{
+  "rights": [
+    {
+      "image":"assets/icons/plants.svg",
+      "title":"The Crooked Forest",
+      "city":"Poland"
+
+    },
+    {
+      "image":"assets/icons/forest.svg",
+      "title":"Redwood National Park",
+      "city":"United States"
+
+    },
+    {
+      "image":"assets/icons/life.svg",
+      "title":"Daintree Rainforest",
+      "city":"Australia"
+
+
+    },
+    {
+      "image":"assets/icons/water.svg",
+      "title":"Jiuzhaigou Valley",
+      "city":"China"
+
+    }
+
+  ]
+}
