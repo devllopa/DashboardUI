@@ -25,14 +25,13 @@ class RightCard extends StatelessWidget {
               color: Cst.lightBG.withOpacity(0.02),
               image: DecorationImage(
                   image: NetworkImage(right!.image!), fit: BoxFit.cover),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.white,
-                  blurRadius: 15,
-                  offset: Offset(0, 16), // Shadow position
-                ),
-              ],
-
+              // boxShadow: [
+              //   BoxShadow(
+              //     color: Colors.white,
+              //     blurRadius: 15,
+              //     offset: Offset(0, 16), // Shadow position
+              //   ),
+              // ],
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,

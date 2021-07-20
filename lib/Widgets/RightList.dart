@@ -26,7 +26,7 @@ class _RightListState extends State<RightList> {
             crossAxisSpacing: 15,
             mainAxisSpacing: 15,
             mainAxisExtent: 250),
-        padding: EdgeInsets.only(left: 10, right: 40, top: 20, bottom: 20),
+        padding: EdgeInsets.only(left: 10, right: 40, top: 20),
         itemBuilder: (BuildContext context, int index) {
           Right right = new Right(
             image: rights[index].image,
