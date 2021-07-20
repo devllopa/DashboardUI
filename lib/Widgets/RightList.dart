@@ -19,17 +19,20 @@ class _RightListState extends State<RightList> {
       child: GridView.builder(
         itemCount: rights.length,
         physics: BouncingScrollPhysics(),
+        primary: false,
+        shrinkWrap: true,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 4,
-            crossAxisSpacing: 20,
-            mainAxisSpacing: 20,
+            crossAxisSpacing: 15,
+            mainAxisSpacing: 15,
             mainAxisExtent: 250),
-        padding: EdgeInsets.only(left: 20, right: 40, top: 20, bottom: 20),
+        padding: EdgeInsets.only(left: 10, right: 40, top: 20, bottom: 20),
         itemBuilder: (BuildContext context, int index) {
           Right right = new Right(
             image: rights[index].image,
             title: rights[index].title,
             city: rights[index].city,
+            color: rights[index].color,
           );
           return RightCard(right: right);
         },

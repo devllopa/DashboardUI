@@ -1,29 +1,34 @@
 {
   "rights": [
     {
-      "image":"assets/icons/plants.svg",
+      "image":"https://i.imgur.com/DXO0pLR.png",
       "title":"The Crooked Forest",
-      "city":"Poland"
+      "city":"Poland",
+      "color":"2e0433"
 
     },
     {
-      "image":"assets/icons/forest.svg",
+      "image":"https://i.imgur.com/HmalNhI.png",
       "title":"Redwood National Park",
-      "city":"United States"
+      "city":"United States",
+      "color":"263d2d"
+
 
     },
     {
-      "image":"assets/icons/life.svg",
+      "image":"https://i.imgur.com/TUhExaY.png",
       "title":"Daintree Rainforest",
-      "city":"Australia"
+      "city":"Australia",
+      "color":"166b8e"
+
 
 
     },
     {
-      "image":"assets/icons/water.svg",
+      "image":"https://i.imgur.com/c9o1Jcx.png",
       "title":"Jiuzhaigou Valley",
-      "city":"China"
-
+      "city":"China",
+      "color":"541c5c"
     }
 
   ]

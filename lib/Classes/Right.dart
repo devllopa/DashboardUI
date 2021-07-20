@@ -4,14 +4,16 @@ class Right {
   String? image;
   String? title;
   String? city;
+  String? color;
 
-  Right({this.image, this.title, this.city});
+  Right({this.image, this.title, this.city,this.color});
 
   Map<String, dynamic> toMap() {
     return {
       'image': image,
       'title': title,
       'city': city,
+      'color': color,
     };
   }
 
@@ -20,6 +22,7 @@ class Right {
       image: map['image'],
       title: map['title'],
       city: map['city'],
+      color: map['color'],
     );
   }
 

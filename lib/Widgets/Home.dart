@@ -30,14 +30,20 @@ class _MyHomePageState extends State<HomePage> with TickerProviderStateMixin {
                   child: Row(
                 children: [
                   Container(
-                      width: MediaQuery.of(context).size.width * 0.4,
+                      width: MediaQuery.of(context).size.width * 0.3,
                       child: StoriesGrid()),
                   Expanded(
-                    child: Column(
-                      children: [
-                        FirstCard(),
-                        Expanded(child: RightList()),
-                      ],
+                    child: ScrollConfiguration(
+                      behavior: ScrollConfiguration.of(context)
+                          .copyWith(scrollbars: false),
+                      child: ListView(
+                        primary: true,
+                        physics: BouncingScrollPhysics(),
+                        children: [
+                          FirstCard(),
+                          RightList(),
+                        ],
+                      ),
                     ),
                   ),
                 ],
