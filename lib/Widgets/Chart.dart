@@ -2,21 +2,74 @@ import 'package:dmd/Utils/constants.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CustomChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(left: 10, right: 40, top: 50),
-      width: MediaQuery.of(context).size.width * 0.5,
-      height: 200,
-      color: Colors.transparent,
-      child: LineChart(
-        sampleData1(),
-        swapAnimationDuration: Duration(milliseconds: 150), // Optional
-        swapAnimationCurve: Curves.linear, // Optional
-      ),
+    String? selectedVal="2020";
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: EdgeInsets.only(left: 10, right: 50, top: 40, bottom: 40),
+          child: Row(
+            children: [
+              Text("Average New Trees Every Year",
+                  style: GoogleFonts.lexendDeca(
+                      color: Cst.borderColor,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 16,
+                      fontStyle: FontStyle.normal)),
+              Spacer(),
+              StatefulBuilder(
+                  builder: (BuildContext context, StateSetter setState) {
+                return DropdownButton<String>(
+                  dropdownColor: Cst.darkBG,
+                  value: selectedVal,
+                 underline: Container(),
+                 icon: SvgPicture.asset(
+                   'assets/icons/down.svg',
+                   color: Cst.borderColor,
+                   width: 15,
+                 ),
+                 style: GoogleFonts.lexendDeca(
+                      color: Cst.borderColor,
+                      fontWeight: FontWeight.w700,
+                      fontStyle: FontStyle.normal),
+                  items: <String>['2021', '2020', '2019']
+                      .map((String value) {
+                    return DropdownMenuItem<String>(
+                      value: value,
+                      child: new Text(value,
+                          style: GoogleFonts.lexendDeca(
+                              color: Cst.borderColor,
+                              fontWeight: FontWeight.w700,
+                              fontStyle: FontStyle.normal)),
+                    );
+                  }).toList(),
+                  onChanged: (val) {
+                    setState(() => selectedVal = val);
+                  },
+                );
+              }),
+            ],
+          ),
+        ),
+        Container(
+          width: MediaQuery.of(context).size.width * 0.6,
+          margin: EdgeInsets.only(left: 5,right: 50),
+          height: 220,
+          color: Colors.transparent,
+          child: LineChart(
+            sampleData1(),
+            swapAnimationDuration: Duration(milliseconds: 150), // Optional
+            swapAnimationCurve: Curves.linear, // Optional
+          ),
+        ),
+      ],
     );
   }
 }
@@ -112,7 +165,7 @@ LineChartData sampleData1() {
       ),
     ),
     minX: 0,
-    maxX: 14,
+    maxX: 22,
     maxY: 4,
     minY: 0,
     lineBarsData: linesBarData1(),
@@ -124,20 +177,63 @@ List<LineChartBarData> linesBarData1() {
   final lineChartBarData1 = LineChartBarData(
     spots: [
       FlSpot(0, 1),
-      FlSpot(3, 1.5),
-      FlSpot(3, 1.5),
-      FlSpot(3, 1.5),
-      FlSpot(3, 1.5),
-      FlSpot(5, 1.4),
-      FlSpot(7, 3.4),
-      FlSpot(10, 2),
-      FlSpot(12, 2.2),
-      FlSpot(13, 2),
-      FlSpot(13, 2),
+      FlSpot(1, 1),
+      FlSpot(3, 2.5),
+      FlSpot(3.4, 2.5),
+      FlSpot(3.4, 2.5),
+      FlSpot(3.4, 2.5),
+      FlSpot(3.4, 2),
+      FlSpot(3.9, 2.7),
+      FlSpot(4, 3.05),
+      FlSpot(4.1, 3.45),
+      FlSpot(4.5, 3),
+      FlSpot(4.5, 3),
+      FlSpot(4.5, 3),
+      FlSpot(4.5, 3),
+      FlSpot(4.5, 3),
+      FlSpot(4.55, 3),
+      FlSpot(4.65, 1.5),
+      FlSpot(4.7, 1.5),
+      FlSpot(4.75, 2),
+      FlSpot(4.9,2),
+      FlSpot(4.95,2),
+      FlSpot(5,2),
+      FlSpot(5.5,2),
+      FlSpot(6,2),
+      FlSpot(6.5,2.5),
+      FlSpot(6.75,2.75),
+      FlSpot(7,3),
+      FlSpot(7.25,4),
+      FlSpot(7.50,4),
+      FlSpot(7.75,4),
+      FlSpot(8,4),
+      FlSpot(8.25,3.5),
+      FlSpot(8.75,2),
+      FlSpot(9,2.5),
+      FlSpot(9.25,2),
+      FlSpot(10,2),
+      FlSpot(11,2),
+      FlSpot(12,2),
+      FlSpot(13,2),
+      FlSpot(14,2.5),
+      FlSpot(15,2.9),
+      FlSpot(16,3),
+      FlSpot(17,1.5),
+      FlSpot(18,1.75),
+      FlSpot(19,2),
+      FlSpot(20,0),
+      FlSpot(21,1.75),
+      FlSpot(22,4),
+
+
+
+
+
     ],
     isCurved: false,
     colors: [
-      const Color(0xff4af699),
+      const Color(0xff4af699).withOpacity(0.7),
+      const Color(0xff624EE3),
     ],
     barWidth: 2.5,
     isStrokeCapRound: false,
