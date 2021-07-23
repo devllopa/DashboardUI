@@ -1,5 +1,4 @@
-# dmd
-
+# Dashboard UI
 A new Flutter project.
 
 ## Getting Started
