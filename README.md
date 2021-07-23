@@ -1,5 +1,5 @@
 # Dashboard UI
-![alt text](https://i.imgur.com/oYRCmGi.png)
+![alt text](https://i.imgur.com/SRhcMBs.png)
 
 
 ### Show some :heart: and star the repo to support the project
