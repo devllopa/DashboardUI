@@ -1,13 +1,20 @@
 # Dashboard UI
-![alt text](https://i.imgur.com/SRhcMBs.png)
-
 
 ### Show some :heart: and star the repo to support the project
+
+
 
 Presenting a Dark Dashboard UI for NGO. I tried to make it look clean with more empty space and tried to use some bright colors for the design to make it look interesting.
 
 
+![alt text](https://i.imgur.com/SRhcMBs.png)
+
+
+
+![alt text](https://i.imgur.com/IekoqEU.png)
+
 ![alt text](https://i.imgur.com/l6g35T1.png)
+
 ![alt text](https://i.imgur.com/r2DCTGq.png)
 
 
