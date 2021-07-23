@@ -7,6 +7,9 @@
 Presenting a Dark Dashboard UI for NGO. I tried to make it look clean with more empty space and tried to use some bright colors for the design to make it look interesting.
 
 
+
+<a href="https://www.mediafire.com/file/fy3tqz93qinsfv1/Dashboard+Ui.zip/file" download>Download Preview</a>
+
 ![alt text](https://i.imgur.com/SRhcMBs.png)
 
 
