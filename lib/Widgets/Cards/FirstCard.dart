@@ -7,10 +7,15 @@ class FirstCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 10, right: 40, top: 20),
       width: MediaQuery.of(context).size.width * 0.5,
-      height: 180,
-      color: Colors.transparent,
+      height: 200,
+      margin: EdgeInsets.only(left: 10, right: 40, top: 40),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15),
+        image: DecorationImage(
+            image: NetworkImage("https://i.imgur.com/57dJA26.png"),
+            fit: BoxFit.cover),
+      ),
       child: ClipRRect(
         borderRadius: BorderRadius.all(Radius.circular(15)),
         child: Material(
@@ -20,12 +25,6 @@ class FirstCard extends StatelessWidget {
             child: Container(
               padding:
                   EdgeInsets.only(bottom: 20, top: 30, left: 15, right: 15),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                image: DecorationImage(
-                    image: NetworkImage("https://i.imgur.com/57dJA26.png"),
-                    fit: BoxFit.cover),
-              ),
               child: Padding(
                 padding: const EdgeInsets.only(left: 15),
                 child: Column(
@@ -46,8 +45,11 @@ class FirstCard extends StatelessWidget {
                     TextButton(
                         onPressed: () {},
                         style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(Color(0xffFD6D6D)),
-                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(8),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Color(0xffFD6D6D)),
+                            shape: MaterialStateProperty.all<
+                                RoundedRectangleBorder>(RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8),
                             ))),
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),

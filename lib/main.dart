@@ -1,4 +1,5 @@
 import 'package:bitsdojo_window/bitsdojo_window.dart';
+import 'package:dmd/Utils/constants.dart';
 import 'package:dmd/Widgets/Home.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -31,6 +32,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          splashColor: Cst.primaryColor.withOpacity(0.5)
+        ),
         home: Scaffold(
             body: WindowBorder(
                 color: Colors.transparent,

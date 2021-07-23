@@ -26,7 +26,7 @@ class _StoriesGridState extends State<StoriesGrid> {
             crossAxisSpacing: 20,
             mainAxisSpacing: 20,
             mainAxisExtent: 200),
-        padding: EdgeInsets.only(left: 40, right: 30, top: 20, bottom: 20),
+        padding: EdgeInsets.only(left: 40, right: 30, top: 40, bottom: 20),
         itemBuilder: (BuildContext context, int index) {
           Stories st = new Stories(
             image: stories[index].image,
