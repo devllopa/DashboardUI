@@ -1,4 +1,9 @@
 # Dashboard UI
+![alt text]https://i.imgur.com/oYRCmGi.png
+
+
+### Show some :heart: and star the repo to support the project
+
 A new Flutter project.
 
 ## Getting Started
