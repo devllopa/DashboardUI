@@ -2,7 +2,7 @@
     package="com.example.dmd">
    <application
         android:label="dmd"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
